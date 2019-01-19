@@ -5,7 +5,7 @@ const Footer = () => (
     <footer className="footer">
         <div className="bottom">
             <ul id='footer-list'>
-                <li><span><img className='logo' id="reactLogo" src="assets/images/react-logo.png"/></span> Clicky Game!</li>
+                <li>Clicky Smash!</li>
                 <li>Ben Massey</li>
                 <li><a href="" target="blank"><span><img className='logo' src="assets/images/github.png"/></span> Github</a></li>
             </ul>

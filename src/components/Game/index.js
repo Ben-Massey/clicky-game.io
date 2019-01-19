@@ -18,7 +18,6 @@ class Game extends Component {
 
     // function gets called when the page loads
     componentDidMount() {
-        // reorders the dataarray on state changes
         this.setState({ data: this.shuffleDeck(this.state.data) });
     }
 
@@ -31,8 +30,6 @@ class Game extends Component {
     // resets all the clicked properties to false
     resetDeck = data => {
         const resetData = data.map(item => ({ ...item, clicked: false }));
-        // console.log(data);
-        // console.log(resetData);
         return this.shuffleDeck(resetData);
       };
 
@@ -62,7 +59,6 @@ class Game extends Component {
     // then update that cards clicked property
     gameCardClick = id => {
         let guessedCorrectly = false;
-        // newData will be the data array with updated clicked properties
         const newData = this.state.data.map(item => {
           if (item.id === id) {
             if (!item.clicked) {
@@ -72,8 +68,6 @@ class Game extends Component {
           }
           return item;     
         });
-        // if guessedCorrectly = true, run the correctGuess function,
-        // else run the wrongGuess function
         guessedCorrectly ? this.correctGuess(newData) : this.wrongGuess(newData);
       };
 
