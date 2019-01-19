@@ -7,7 +7,7 @@ const Footer = () => (
             <ul id='footer-list'>
                 <li>Clicky Smash!</li>
                 <li>Ben Massey</li>
-                <li><a href="" target="blank"><span><img className='logo' src="assets/images/github.png"/></span> Github</a></li>
+                <li><a href="https://github.com/Ben-Massey" target="blank"><span><img className='logo' src="assets/images/github.png"/></span> Github</a></li>
             </ul>
         </div>
     </footer>
